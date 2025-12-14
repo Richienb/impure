@@ -5,7 +5,7 @@
 To initialize environment (run inside project folder):
 
 ```sh
-nix flake init --template github:Richienb/impure.nix#uv-cuda
+nix flake init --template github:Richienb/impure#uv-cuda
 ```
 
 You might need to run `direnv allow` so that the environment loads automatically.
@@ -19,5 +19,5 @@ uv init
 ## uv (Python) (without Cuda)
 
 ```sh
-nix flake init --template github:Richienb/impure.nix#uv
+nix flake init --template github:Richienb/impure#uv
 ```

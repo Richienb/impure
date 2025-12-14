@@ -1,0 +1,1 @@
+Some based on [pyproject.nix#impure](https://github.com/pyproject-nix/pyproject.nix/blob/2c8df1383b32e5443c921f61224b198a2282a657/templates/impure/flake.nix).

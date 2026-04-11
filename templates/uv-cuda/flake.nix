@@ -30,7 +30,7 @@
 							cxxRuntime
 						];
 
-						env = lib.optionalAttrs pkgs.stdenv.isLinux {
+						env = lib.optionalAttrs pkgs.stdenv.hostPlatform.isLinux {
 								LD_LIBRARY_PATH = with pkgs; lib.makeLibraryPath (
 									[
 										# CUDA shared libraries

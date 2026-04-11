@@ -16,7 +16,7 @@
 					pkgs = import nixpkgs {
 						inherit system;
 					};
-					cxxRuntime = if pkgs.stdenv.isLinux then pkgs.gcc.cc.lib else pkgs.libcxx;
+					cxxRuntime = if pkgs.stdenv.hostPlatform.isLinux then pkgs.gcc.cc.lib else pkgs.libcxx;
 				in
 				{
 					default = pkgs.mkShell {

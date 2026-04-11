@@ -49,6 +49,8 @@
 							# Python libraries often load native shared objects using dlopen(3).
 							# Setting LD_LIBRARY_PATH makes the dynamic library loader aware of libraries without using RPATH for lookup.
 							export LD_LIBRARY_PATH="${lib.makeLibraryPath [ cxxRuntime pkgs.zlib ]}''${LD_LIBRARY_PATH:+:}$LD_LIBRARY_PATH"
+							export UV_PYTHON_DOWNLOADS=never
+							export UV_PYTHON="${pkgs.python3}/bin/python3"
 							uv sync
 							. .venv/bin/activate
 						'';

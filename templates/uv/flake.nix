@@ -30,7 +30,7 @@
 							unset PYTHONPATH
 							# Python libraries often load native shared objects using dlopen(3).
 							# Setting LD_LIBRARY_PATH makes the dynamic library loader aware of libraries without using RPATH for lookup.
-							export LD_LIBRARY_PATH="${cxxRuntime}/lib:${pkgs.zlib}/lib''${LD_LIBRARY_PATH:+:}$LD_LIBRARY_PATH"
+							export LD_LIBRARY_PATH="${lib.makeLibraryPath [ cxxRuntime pkgs.zlib ]}''${LD_LIBRARY_PATH:+:}$LD_LIBRARY_PATH"
 							uv sync
 							. .venv/bin/activate
 						'';

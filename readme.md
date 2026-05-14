@@ -30,3 +30,9 @@ uv add -r requirements.txt
 ```sh
 nix flake init --template github:Richienb/impure#uv
 ```
+
+# bun (JavaScript)
+
+```sh
+nix flake init --template github:Richienb/impure#bun
+```

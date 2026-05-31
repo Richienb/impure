@@ -7,6 +7,9 @@
     	uv-cuda = {
         path = ./templates/uv-cuda;
       };
+      bun = {
+        path = ./templates/bun;
+      };
     };
   };
 }

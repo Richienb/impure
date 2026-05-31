@@ -10,6 +10,9 @@
       bun = {
         path = ./templates/bun;
       };
+      nodejs = {
+        path = ./templates/nodejs;
+      };
     };
   };
 }

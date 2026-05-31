@@ -36,3 +36,9 @@ nix flake init --template github:Richienb/impure#uv
 ```sh
 nix flake init --template github:Richienb/impure#bun
 ```
+
+## Node.js (JavaScript)
+
+```sh
+nix flake init --template github:Richienb/impure#nodejs
+```

@@ -13,6 +13,9 @@
       nodejs = {
         path = ./templates/nodejs;
       };
+      zig = {
+        path = ./templates/zig;
+      };
     };
   };
 }

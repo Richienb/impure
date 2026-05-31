@@ -42,3 +42,9 @@ nix flake init --template github:Richienb/impure#bun
 ```sh
 nix flake init --template github:Richienb/impure#nodejs
 ```
+
+## Zig
+
+```sh
+nix flake init --template github:Richienb/impure#zig
+```

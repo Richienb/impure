@@ -16,6 +16,9 @@
       zig = {
         path = ./templates/zig;
       };
+      rust = {
+        path = ./templates/rust;
+      };
     };
   };
 }
